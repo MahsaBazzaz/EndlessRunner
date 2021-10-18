@@ -14,8 +14,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator PlayerAnimator;
     [SerializeField] private Shake CameraShaker;
     [SerializeField] private UIManager UI;
-    [SerializeField] private GameObject GameOver;
     [SerializeField] private GameObject JumpSound;
+    [SerializeField] private GameManager Manager;
     void Start()
     {
         CameraShaker = Camera.main.GetComponent<Shake>();
@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     {
         if (Health <= 0)
         {
-            GameOver.SetActive(true);
+            Manager.GameIsOver();
             Destroy(gameObject);
         }
         transform.position = Vector2.MoveTowards(transform.position, Position, Speed * Time.deltaTime);

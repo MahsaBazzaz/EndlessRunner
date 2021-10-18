@@ -15,9 +15,12 @@ public class ScoreManager : MonoBehaviour
     {
         if (other.CompareTag("Obstacle"))
         {
-            Debug.Log("h");
             Score++;
             UI.SetScore(Score);
         }
+    }
+    public int GetScore()
+    {
+        return Score;
     }
 }
