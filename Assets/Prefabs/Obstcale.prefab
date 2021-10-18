@@ -127,6 +127,7 @@ MonoBehaviour:
   Speed: 10
   ExplodeEffect: {fileID: 8796122666545272446, guid: b269ef630aa32674d9ebb1e161414bcd, type: 3}
   CameraShaker: {fileID: 0}
+  ExplosionSound: {fileID: 6015482598925629861, guid: 73262a4a337c50348be74fbbbd98b18e, type: 3}
 --- !u!114 &4660762704097549604
 MonoBehaviour:
   m_ObjectHideFlags: 0

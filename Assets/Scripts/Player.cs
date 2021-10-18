@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Shake CameraShaker;
     [SerializeField] private UIManager UI;
     [SerializeField] private GameObject GameOver;
+    [SerializeField] private GameObject JumpSound;
     void Start()
     {
         CameraShaker = Camera.main.GetComponent<Shake>();
@@ -32,6 +33,7 @@ public class Player : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, Position, Speed * Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
+            Instantiate(JumpSound, transform.position, Quaternion.identity);
             CameraShaker.ShakeVertical();
             Instantiate(Moveeffect, transform.position, Quaternion.identity);
             PlayerAnimator.SetTrigger("Taunt");
@@ -46,6 +48,7 @@ public class Player : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
+            Instantiate(JumpSound, transform.position, Quaternion.identity);
             CameraShaker.ShakeVertical();
             Instantiate(Moveeffect, transform.position, Quaternion.identity);
             PlayerAnimator.SetTrigger("Taunt");

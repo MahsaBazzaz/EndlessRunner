@@ -601,7 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {x: 0, y: 0}
   Delta: 3
-  Speed: 20
+  Speed: 30
   MaxHeight: 3
   MinHeight: -3
   Health: 5
@@ -610,6 +610,7 @@ MonoBehaviour:
   CameraShaker: {fileID: 519420033}
   UI: {fileID: 1204968275}
   GameOver: {fileID: 641092814}
+  JumpSound: {fileID: 2672997143568204943, guid: 0b89631266ddd47478617f43342c7ddd, type: 3}
 --- !u!61 &958299895
 BoxCollider2D:
   m_ObjectHideFlags: 0

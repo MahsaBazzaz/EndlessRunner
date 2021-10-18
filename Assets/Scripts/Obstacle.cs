@@ -9,6 +9,7 @@ public class Obstacle : MonoBehaviour
     [SerializeField] private float Speed;
     [SerializeField] private GameObject ExplodeEffect;
     [SerializeField] private Shake CameraShaker;
+    [SerializeField] private GameObject ExplosionSound;
     void Start()
     {
         CameraShaker = Camera.main.GetComponent<Shake>();
@@ -21,6 +22,7 @@ public class Obstacle : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Instantiate(ExplosionSound, transform.position, Quaternion.identity);
             CameraShaker.ShakeHorizontal();
             Instantiate(ExplodeEffect, transform.position, Quaternion.identity);
             other.GetComponent<Player>().GetDamage(Damage);
