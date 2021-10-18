@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float MinHeight;
     [SerializeField] private int Health;
     [SerializeField] private GameObject Moveeffect;
+    [SerializeField] private Animator PlayerAnimator;
+
     [SerializeField] private Shake CameraShaker;
     void Start()
     {
@@ -29,6 +31,7 @@ public class Player : MonoBehaviour
         {
             CameraShaker.ShakeVertical();
             Instantiate(Moveeffect, transform.position, Quaternion.identity);
+            PlayerAnimator.SetTrigger("Taunt");
             if (transform.position.y + Delta <= MaxHeight)
             {
                 Position = new Vector2(transform.position.x, transform.position.y + Delta);
@@ -42,6 +45,7 @@ public class Player : MonoBehaviour
         {
             CameraShaker.ShakeVertical();
             Instantiate(Moveeffect, transform.position, Quaternion.identity);
+            PlayerAnimator.SetTrigger("Taunt");
             if (transform.position.y - Delta >= MinHeight)
             {
                 Position = new Vector2(transform.position.x, transform.position.y - Delta);

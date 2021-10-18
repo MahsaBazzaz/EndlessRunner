@@ -364,6 +364,7 @@ MonoBehaviour:
   MinHeight: -3
   Health: 2
   Moveeffect: {fileID: 6784155361131504088, guid: fdf11a952f2ef924f9b6ff7a5c28fd3e, type: 3}
+  PlayerAnimator: {fileID: 958299892}
   CameraShaker: {fileID: 0}
 --- !u!61 &958299895
 BoxCollider2D:
