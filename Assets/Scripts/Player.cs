@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -15,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator PlayerAnimator;
     [SerializeField] private Shake CameraShaker;
     [SerializeField] private UIManager UI;
+    [SerializeField] private GameObject GameOver;
     void Start()
     {
         CameraShaker = Camera.main.GetComponent<Shake>();
@@ -26,7 +26,8 @@ public class Player : MonoBehaviour
     {
         if (Health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameOver.SetActive(true);
+            Destroy(gameObject);
         }
         transform.position = Vector2.MoveTowards(transform.position, Position, Speed * Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.UpArrow))
