@@ -903,7 +903,7 @@ MonoBehaviour:
   PlayerAnimator: {fileID: 958299892}
   CameraShaker: {fileID: 519420033}
   UI: {fileID: 1204968275}
-  JumpSound: {fileID: 2672997143568204943, guid: 0b89631266ddd47478617f43342c7ddd, type: 3}
+  PopSound: {fileID: 2672997143568204943, guid: 0b89631266ddd47478617f43342c7ddd, type: 3}
   Manager: {fileID: 397688670}
 --- !u!61 &958299895
 BoxCollider2D:

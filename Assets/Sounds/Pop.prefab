@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2672997143568204929}
   - component: {fileID: 2672997143568204928}
   m_Layer: 0
-  m_Name: Jump
+  m_Name: Pop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,7 +40,7 @@ AudioSource:
   m_GameObject: {fileID: 2672997143568204943}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 9188395132178505749, guid: e5e2973bd32de5640994d40750d86fd6, type: 2}
   m_audioClip: {fileID: 8300000, guid: 7fa38079abb72f44cbad4e256edbe625, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
