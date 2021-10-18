@@ -13,11 +13,13 @@ public class Player : MonoBehaviour
     [SerializeField] private int Health;
     [SerializeField] private GameObject Moveeffect;
     [SerializeField] private Animator PlayerAnimator;
-
     [SerializeField] private Shake CameraShaker;
+    [SerializeField] private UIManager UI;
     void Start()
     {
         CameraShaker = Camera.main.GetComponent<Shake>();
+        UI.SetMaxHealth(Health);
+        UI.SetHealth(Health);
     }
 
     void Update()
@@ -59,5 +61,6 @@ public class Player : MonoBehaviour
     public void GetDamage(int damage)
     {
         Health -= damage;
+        UI.SetHealth(Health);
     }
 }
