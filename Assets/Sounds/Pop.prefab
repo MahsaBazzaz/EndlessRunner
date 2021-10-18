@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2672997143568204929}
   - component: {fileID: 2672997143568204928}
+  - component: {fileID: 3803719296700070592}
   m_Layer: 0
   m_Name: Pop
   m_TagString: Untagged
@@ -127,3 +128,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3803719296700070592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2672997143568204943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9380f2c523e06434da3e1b46c90b5a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lifetime: 1

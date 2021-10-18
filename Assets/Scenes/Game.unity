@@ -218,6 +218,7 @@ MonoBehaviour:
   text: {fileID: 54045681}
   IdleColor: {r: 0.4156863, g: 0.13725491, b: 0.13725491, a: 1}
   HoverColor: {r: 0.5471698, g: 0.4253471, b: 0.4253471, a: 1}
+  HoverSound: {fileID: 5370820647978022780, guid: cd87b963e73f32141bead97980cc74e0, type: 3}
 --- !u!1 &206995119
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +347,7 @@ MonoBehaviour:
   Logs: {fileID: 11400000, guid: b732a8c8c33693b4d907dc26ffd176d2, type: 2}
   Score: {fileID: 1572339632}
   HighScore: {fileID: 456645559}
+  GameOverrSound: {fileID: 2292969024478291356, guid: 205ee08f03033bc48b471fb704a27ee8, type: 3}
 --- !u!4 &397688671
 Transform:
   m_ObjectHideFlags: 0
@@ -1565,6 +1567,7 @@ MonoBehaviour:
   text: {fileID: 1295584941}
   IdleColor: {r: 0.4156863, g: 0.13725491, b: 0.13725491, a: 1}
   HoverColor: {r: 0.54901963, g: 0.42352942, b: 0.42352942, a: 1}
+  HoverSound: {fileID: 5370820647978022780, guid: cd87b963e73f32141bead97980cc74e0, type: 3}
 --- !u!1 &1485391338
 GameObject:
   m_ObjectHideFlags: 0

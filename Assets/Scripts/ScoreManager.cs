@@ -23,4 +23,8 @@ public class ScoreManager : MonoBehaviour
     {
         return Score;
     }
+    public void Stop()
+    {
+        this.gameObject.SetActive(false);
+    }
 }

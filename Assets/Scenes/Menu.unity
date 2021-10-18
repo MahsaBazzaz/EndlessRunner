@@ -369,6 +369,7 @@ MonoBehaviour:
   text: {fileID: 817372549}
   IdleColor: {r: 1, g: 1, b: 1, a: 1}
   HoverColor: {r: 0.43529412, g: 0.5137255, b: 0.58431375, a: 1}
+  HoverSound: {fileID: 5370820647978022780, guid: cd87b963e73f32141bead97980cc74e0, type: 3}
 --- !u!1 &1079153328
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +531,7 @@ MonoBehaviour:
   text: {fileID: 1118712925}
   IdleColor: {r: 1, g: 1, b: 1, a: 1}
   HoverColor: {r: 0.43529412, g: 0.5137255, b: 0.58431375, a: 1}
+  HoverSound: {fileID: 5370820647978022780, guid: cd87b963e73f32141bead97980cc74e0, type: 3}
 --- !u!1 &1383587740
 GameObject:
   m_ObjectHideFlags: 0
