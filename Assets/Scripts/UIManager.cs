@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private Slider HealthSlider;
     [SerializeField] private Image Fill;
+    [SerializeField] private Text Score;
     [SerializeField] private Gradient Gradient;
     public void SetMaxHealth(int health)
     {
@@ -17,5 +18,9 @@ public class UIManager : MonoBehaviour
     {
         HealthSlider.value = health;
         Fill.color = Gradient.Evaluate(HealthSlider.normalizedValue);
+    }
+    public void SetScore(int score)
+    {
+        Score.text = score.ToString();
     }
 }
